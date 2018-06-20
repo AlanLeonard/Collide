@@ -1,0 +1,91 @@
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#appWrapper h2 {
+  text-align: center;
+  color: #fff;
+  margin: 0 0 12px 0;
+  padding: 12px;
+  background: #33cb33;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+}
+#appWrapper {
+  position: relative;
+}
+div.collidascopeContainer {
+  background: black;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+}
+div.collidascopeContainer.sixRound {
+    clip-path: circle(50%);
+    width: 300px;
+    height: 300px;
+}
+.sixRound video {
+  height: 225px;
+  width: 300px;
+  position: absolute;
+  left: 0px;
+  top: -75px;
+  clip-path: polygon(21px 0, 279px 0, 150px 100%); 
+  transform-origin: 150px 100%;
+}
+.sixRound #video1 {
+  transform: scaleX(-1);
+}
+.sixRound #video2 {
+  transform: rotate(60deg);
+}
+.sixRound #video3{
+  transform: scaleX(-1) rotate(240deg);
+}
+.sixRound #video4 {
+  transform: rotate(180deg)
+}
+.sixRound #video5 {
+  transform: scaleX(-1) rotate(120deg)
+}
+.sixRound #video6 {
+  transform: rotate(300deg);
+}
+.fourSquare video {
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    object-fit: cover;
+    top: 0%;
+    right: 230px;
+    position: absolute;
+    transform-origin: 66% 100%;
+}
+.fourSquare #video1 {
+    transform: scaleX(1);
+}
+.fourSquare #video2 {
+    transform: scaleX(-1) translateX(-200px);
+}
+.fourSquare #video3{
+    transform: scaleX(-1) scaleY(-1) translateX(-200px); 
+}
+.fourSquare #video4 {
+    transform: scaleY(-1);
+}
+#take-photo {
+  background: #33cb33;
+  border-radius: 50%;
+  color: transparent;
+  height: 50px;
+  width: 50px;
+  display: block;
+  margin: 48px auto 0 ;
+  box-shadow: 0 0 0 10px rgba(255,255,255,0.3), 0 0 0 15px #33cb33;
+}
